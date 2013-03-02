@@ -113,11 +113,18 @@ public class LoginPage extends Activity
 			try
 			{
 				ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-				nameValuePairs.add(new BasicNameValuePair("uname", send_user));
-				nameValuePairs.add(new BasicNameValuePair("pass", send_pass));
+				nameValuePairs.add(new BasicNameValuePair("user", send_user));
+				nameValuePairs.add(new BasicNameValuePair("pwd", send_pass));
+				nameValuePairs.add(new BasicNameValuePair("type", "s"));
+				Log.d("loginPage","user="+send_user);
+				Log.d("loginPage","password="+send_pass);
+				Log.d("loginPage","type="+"s");
+				
 				HttpClient httpclient = new DefaultHttpClient();
 				String folder = getString(R.string.network_folder);
 				String postURL = folder+"authenticate.php";
+				Log.d("loginPage","login folder="+postURL);
+				
 				HttpPost httppost = new HttpPost(postURL);
 				httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 				HttpResponse httpResponse = httpclient.execute(httppost);

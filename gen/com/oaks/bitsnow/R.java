@@ -16,13 +16,15 @@ public final class R {
     }
     public static final class id {
         public static final int buttonCourseList=0x7f070001;
-        public static final int buttonForgot=0x7f070009;
-        public static final int buttonLogin=0x7f070008;
+        public static final int buttonForgot=0x7f07000b;
+        public static final int buttonLogin=0x7f07000a;
         public static final int buttonLogout=0x7f070003;
         public static final int buttonMyCourses=0x7f070002;
         public static final int etPassword=0x7f070007;
         public static final int etUsername=0x7f070005;
-        public static final int menu_settings=0x7f07000a;
+        public static final int menu_settings=0x7f07000c;
+        public static final int radioButton1=0x7f070008;
+        public static final int radioButton2=0x7f070009;
         public static final int tvName=0x7f070000;
         public static final int tvPassword=0x7f070006;
         public static final int tvUsername=0x7f070004;
